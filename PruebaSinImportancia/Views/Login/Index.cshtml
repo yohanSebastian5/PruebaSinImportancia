@@ -1,0 +1,50 @@
+﻿@model PruebaSinImportancia.Models.Libro
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Login/Master.cshtml";
+}
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+<link href="~/Content/Css/Index.css" rel="stylesheet" />
+@Styles.Render("~/Content/css")
+<h2>Productos</h2>
+
+@using (Html.BeginForm("Index", "Login", FormMethod.Post))
+{
+    
+    <div>
+        <div class="section">
+            <div class="container">
+                <div class="row full-height justify-content-center">
+                    <div class="col-12 text-center align-self-center py-5">
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Inicio de Sesion</h4>
+                                            <div class="form-group">
+                                                <input id="Text1" type="text" name="Nombre" placeholder="Email" class="form-style" />
+                                                <i class="input-icon uil uil-at"></i>
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <input id="Text1" type="password" name="Autor" placeholder="Contraseña" class="form-style" />
+                                                <i class="input-icon uil uil-lock-alt"></i>
+                                            </div>
+                                            <a href="#">No tienes cuenta ?, Registrar</a>
+                                            <input id="Button1" type="submit" value="Login" name="Index" class="btn mt-4" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+}
+
+
